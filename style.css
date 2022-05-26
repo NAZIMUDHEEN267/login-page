@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./Assets/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* globel elements */
+img {
+  width: 10%;
+  height: 15px;
+  align-self: center;
+  object-fit: contain;
+}
+
+input {
+  width: 90%;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+span {
+  display: block;
+  color: red;
+  font-size: .8rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 0.8rem;
+}
+
+::placeholder {
+  color: #000;
+  text-transform: capitalize;
+}
+
+/* form box container */
+.form-box {
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.box__headline {
+  font-size: 1.4rem;
+  letter-spacing: 0.9px;
+}
+
+.form {
+  width: 100%;
+}
+
+.form__username,
+.form__passwd {
+  width: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+/* submit button */
+.form__btn {
+  margin-top: 1rem;
+  width: inherit;
+  background: rgb(1, 5, 34);
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background: rgb(3, 10, 69);
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* link icons class name */
+.fa-brands {
+  color: #000;
+}
+
+.links > * {
+  font-size: medium;
+  border: 1px solid rgb(1, 5, 34);
+  padding: 0.8rem;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.link-bg:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.forgot-text {
+  font-size: 0.8rem;
+}
+
+
+/* media query for mobile */
+@media (max-width: 424px) {
+  .form-box {
+    height: 100vh;
+    width: 100%;
+  }
+}

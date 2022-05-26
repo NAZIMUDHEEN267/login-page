@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- style link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- title -->
+    <title>login</title>
+  </head>
+  <body>
+    <!-- form -->
+    <div class="form-box">
+      <h2 class="box__headline">Login</h2>
+
+      <form class="form">
+        <div class="form__username">
+          <img src="./Assets/person.png" alt="user.png" />
+
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="username"
+            autocomplete="off"
+          />
+        </div>
+        <span class="mail-err"></span>
+
+        <div class="form__passwd">
+          <img src="./Assets/lock.png" alt="lock.png" />
+
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password"
+          />
+        </div>
+        <span class="passwd-err"></span>
+
+        <input type="submit" value="submit" class="form__btn" id="submit-btn"/>
+      </form>
+
+      <div class="links">
+        <div class="facebook-link link-bg">
+          <a href="#">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <div class="twitter-link link-bg">
+          <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <div class="google-link link-bg">
+          <a href="#">
+            <i class="fa-brands fa-google"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- forgot text -->
+      <p class="forgot-text">forgot password <a href="#">click</a></p>
+    </div>
+
+    <!-- script link -->
+    <script src="./app.js"></script>
+
+  </body>
+</html>
